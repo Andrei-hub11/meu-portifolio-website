@@ -1,0 +1,118 @@
+.subscription {
+  position: relative;
+  overflow: hidden;
+  padding: 7rem 0;
+}
+
+.subscription__box {
+  position: relative;
+  width: 100%;
+  max-width: 75rem;
+  padding: 0 1.5rem;
+  margin: 0 auto;
+}
+
+.subscription__box__secondary {
+  background-color: var(--cor-principal);
+  padding: 10rem;
+  width: 100%;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 6rem;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.subscription__text {
+  color: var(--cor-clara);
+  font-size: 1.2rem;
+  margin: 2rem 0;
+  line-height: 2.3;
+  transition: 0.3s color;
+}
+
+.subscription__title {
+  color: var(--cor-clara);
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  letter-spacing: 0.5px;
+  border-left: 3px solid var(--cor-clara);
+  padding: 0.13rem 0.75rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.subscription__heading {
+  color: var(--cor-clara);
+  font-size: 5rem;
+  font-family: var(--font-family-title);
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+.subscription__box__secondary .subscription__heading {
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+
+.input-subscription {
+  display: inline-block;
+  padding: 0.9rem 1.5rem;
+  background: var(--cor-clara);
+  border: 2px solid var(--cor-clara);
+  width: 100%;
+  border-radius: 1.7rem;
+  font-family: var(--font-family-principal);
+  font-size: 1.5rem;
+  font-weight: 500;
+  outline: none;
+}
+
+.input-subscription::placeholder {
+  color: var(--cor-principal);
+}
+
+.subscription__box__secondary form {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  column-gap: 1.5rem;
+}
+
+.subscription--data {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.subscription__form-msg {
+  position: absolute;
+  visibility: hidden;
+  font-size: 1.5rem;
+  font-weight: 700;
+  bottom: -2rem;
+}
+
+.subscription--icon {
+  position: absolute;
+  visibility: hidden;
+  right: 1rem;
+  top: 1rem;
+  height: 2.5rem;
+  background-size: cover;
+}
+
+.subscription--data.error .subscription--icon {
+  visibility: visible;
+  filter: var(--cor-light-icons-terciaria);
+}
+
+.subscription--data.error .subscription__form-msg {
+  visibility: visible;
+  color: #db2820;
+}
+
+.subscription--data.success .contact--icon {
+  visibility: visible;
+  filter: var(--cor-success-icon);
+}

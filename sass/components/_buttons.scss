@@ -1,0 +1,124 @@
+.btn {
+  display: inline-flex;
+  margin-top: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  font-family: var(--font-family-title);
+  letter-spacing: 0.2rem;
+  background: linear-gradient(
+    45deg,
+    var(--gradient-cor-1-secundaria),
+    var(--gradient-cor-2-secundaria)
+  );
+  color: var(--cor-clara);
+  padding: 1.4rem;
+  width: 17rem;
+  opacity: 1;
+}
+
+.check-box {
+  position: absolute;
+  top: 0;
+  right: -40px;
+  width: 50px;
+  height: 50px;
+  border-radius: 40px;
+  box-shadow: 0 0 12px -2px rgba(0, 0, 0, 0.5);
+  opacity: 0;
+}
+
+.check-box svg {
+  width: 40px;
+  margin: 5px;
+}
+
+svg path {
+  stroke-width: 3;
+  stroke: #fff;
+  stroke-dasharray: 34;
+  stroke-linecap: round;
+}
+
+.active {
+  background: greenyellow;
+  transition: 1s;
+}
+
+.active .check-box {
+  right: 0;
+  opacity: 1;
+  transition: 1s;
+}
+
+.active p {
+  margin-right: 125px;
+  transition: 1s;
+}
+
+.active svg path {
+  stroke-dashoffset: 0;
+  transition: 1s;
+  transition-delay: 1s;
+}
+
+.btn--projects {
+  margin-top: 4rem;
+  width: 12rem;
+  letter-spacing: 0.3rem;
+  cursor: pointer;
+}
+
+.btn--contact {
+  top: 2rem;
+  display: block;
+  text-align: center;
+  position: relative;
+  padding: 1.6rem;
+  border-radius: 5rem;
+  box-shadow: 0 0.6rem 2rem -0.5rem rgba(0, 0, 0, 0.4);
+  width: 30rem;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.scroll-top {
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  height: 4rem;
+  width: 4rem;
+  bottom: -100%;
+  right: 1.5rem;
+  border-radius: 50%;
+  background: var(--cor-secundaria);
+  transition: 0.7s;
+}
+
+.btn-subscription {
+  display: inline-block;
+  padding: 0.9rem 1.75rem;
+  border-radius: 1.7rem;
+  background-color: var(--cor-secundaria);
+  color: #fff;
+  font-size: 1.5rem;
+  letter-spacing: 0.04rem;
+  min-width: 12.5rem;
+  text-align: center;
+  border: none;
+  outline: none;
+  font-family: var(--font-family-principal);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.icon--arrow {
+  height: 4rem;
+}
+
+.scroll-active {
+  bottom: 2rem;
+  transition: 0.3s;
+}

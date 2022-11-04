@@ -1,0 +1,59 @@
+:root {
+  --cor-principal: #54c627;
+  --cor-secundaria: #86dc57;
+  --cor-texto: rgba(0, 0, 0, 0.7);
+  --cor-clara: #fff;
+  --cor-texto-secundaria: #fff;
+  --cor-fundo-scroll: #fff;
+  --cor-logo: rgba(0, 0, 0, 0.2);
+  --cor-scroll: #085f07;
+  --bg-color-1: hsl(var(--hue-1), 100%, 95.5%);
+  --gradient-cor-1: hsl(159, 68%, 35%, 0.65);
+  --gradient-cor-2: hsl(142, 89%, 78%, 0.65);
+  --gradient-cor-1-secundaria: #56ab2f;
+  --gradient-cor-2-secundaria: #a8e063;
+  --font-family-principal: "Raleway", sans-serif;
+  --font-family-title: "Dosis", sans-serif;
+  --background-body: #fff;
+  --cor-light-icons: invert(57%) sepia(100%) saturate(336%) hue-rotate(58deg)
+    brightness(91%) contrast(104%);
+  --cor-light-icons-secundaria: invert(100%) sepia(0%) saturate(5924%)
+    hue-rotate(108deg) brightness(103%) contrast(103%);
+  --cor-light-icons-terciaria: invert(15%) sepia(74%) saturate(6878%)
+    hue-rotate(358deg) brightness(102%) contrast(114%);
+  --cor-success-icon: invert(57%) sepia(100%) saturate(336%) hue-rotate(58deg)
+    brightness(91%) contrast(104%);
+  --heading-color: hsl(var(--hue-1), 61%, 24%);
+  --img-form: url(/images/imageformContact-corlight.jpg);
+  /* --svg-footer: url(/images/wave.svg); */
+}
+
+[data-theme="dark"] {
+  --cor-principal: #091a7a;
+  --cor-secundaria: #1939b7;
+  --cor-texto: rgba(255, 255, 255, 0.8);
+  --cor-clara: #fff;
+  --cor-texto-secundaria: #fff;
+  --cor-fundo-scroll: #10121e;
+  --cor-logo: #fff;
+  --cor-scroll: #5a5f7b;
+  --bg-color-1: hsl(var(--hue-1), 21%, 11%);
+  --gradient-cor-1: hsl(222, 43%, 51%, 0.65);
+  --gradient-cor-2: hsl(220, 50%, 19%, 0.65);
+  --gradient-cor-1-secundaria: #000428;
+  --gradient-cor-2-secundaria: #004e92;
+  --font-family-principal: "Raleway", sans-serif;
+  --font-family-title: "Dosis", sans-serif;
+  --background-body: #171924;
+  --cor-light-icons: invert(11%) sepia(31%) saturate(7104%) hue-rotate(224deg)
+    brightness(97%) contrast(104%);
+  --cor-light-icons-secundaria: invert(100%) sepia(0%) saturate(5924%)
+    hue-rotate(108deg) brightness(103%) contrast(103%);
+  --cor-light-icons-terciaria: invert(15%) sepia(74%) saturate(6878%)
+    hue-rotate(358deg) brightness(102%) contrast(114%);
+  --cor-success-icon: invert(57%) sepia(100%) saturate(336%) hue-rotate(58deg)
+    brightness(91%) contrast(104%);
+  --heading-color: hsl(var(--hue-1), 61%, 24%);
+  --img-form: url(/images/imageformContact-corblack.jpg);
+  /*  --svg-footer: url(/images/wave2.svg); */
+}
