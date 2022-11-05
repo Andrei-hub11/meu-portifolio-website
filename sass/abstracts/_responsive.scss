@@ -1,10 +1,16 @@
 @include for-size(phone-only) {
+  $font-size--normal: 1.4rem;
+  $font-size--medium: 2rem;
+  $font-size--big: 3rem;
+  $size-title: 3rem;
+  $size-icons: 2rem;
+
   body {
     overflow-x: hidden !important;
   }
 
   .header {
-    min-height: 100vw;
+    min-height: 100vh;
     width: 100%;
     overflow-x: hidden !important;
   }
@@ -56,7 +62,7 @@
   }
 
   .card__text--profi {
-    font-size: 1.2rem;
+    font-size: $font-size--normal;
   }
 
   .card__social {
@@ -85,7 +91,7 @@
 
     &__text {
       font-family: var(--font-family-title);
-      font-size: 3rem;
+      font-size: $size-title;
       font-weight: 700;
       color: var(--cor-principal);
     }
@@ -102,7 +108,7 @@
 
   .about__text-story {
     margin-top: 1rem;
-    font-size: 1.2rem;
+    font-size: $font-size--normal;
     text-align: justify;
     color: var(--cor-texto);
     line-height: 1.8rem;
@@ -111,12 +117,12 @@
   .about--icon {
     filter: var(--cor-light-icons-secundaria);
     padding-left: 0.5rem;
-    height: 2rem;
+    height: $size-icons;
   }
 
   .btn {
     margin-top: 1rem;
-    font-size: 1.2rem;
+    font-size: $font-size--normal;
     letter-spacing: 0.3rem;
     padding: 1rem;
     width: 15rem;
@@ -137,7 +143,7 @@
   .services-title {
     text-align: center;
     font-family: var(--font-family-title);
-    font-size: 3rem;
+    font-size: $size-title;
     font-weight: 700;
     color: var(--cor-principal);
   }
@@ -164,7 +170,7 @@
 
     &__card-text {
       margin-top: 1rem;
-      font-size: 2rem;
+      font-size: $font-size--medium;
       font-weight: 700;
       text-transform: uppercase;
       text-align: justify;
@@ -178,16 +184,20 @@
 
     .services__card-list {
       margin-top: 1rem;
-      font-size: 1.2rem;
+      font-size: $font-size--normal;
       gap: 1rem;
     }
+  }
+
+  .section-projects__title {
+    font-size: $size-title;
   }
 
   .contact {
     padding: 0rem;
 
     &__title {
-      font-size: 3rem;
+      font-size: $font-size--normal;
     }
 
     &__box {
@@ -222,7 +232,7 @@
     }
 
     &__form-msg {
-      font-size: 1.2rem;
+      font-size: $font-size--normal;
       font-weight: 700;
       bottom: -1rem;
     }
@@ -234,7 +244,7 @@
   }
 
   .input-contact {
-    font-size: 1.2rem;
+    font-size: $font-size--normal;
     font-weight: 400;
     width: 35rem;
     height: 3.5rem;
@@ -246,7 +256,7 @@
   }
 
   .input__textarea {
-    font-size: 1.2rem;
+    font-size: $font-size--normal;
     height: 15rem;
     padding: 0.8rem;
     border-radius: 2rem;
@@ -315,17 +325,11 @@
 }
 
 @include for-size(tablet-portrait-up) {
-  .header {
-    min-height: 100vh;
-    width: 100%;
-    overflow-x: hidden !important;
-  }
-
-  .boxInitial {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+  $font-size--normal: 1.5rem;
+  $font-size--medium: 2rem;
+  $font-size--big: 3rem;
+  $size-title: 3rem;
+  $size-icons: 2rem;
 
   .boxInitial__card {
     position: relative;
@@ -361,14 +365,14 @@
 
   .card__text {
     font-family: var(--font-family-principal);
-    font-size: 2rem;
+    font-size: $font-size--medium;
     font-weight: 700;
     color: var(--cor-principal);
     text-align: center;
   }
 
   .card__text--profi {
-    font-size: 1.5rem;
+    font-size: $font-size--normal;
   }
 
   .card__social {
@@ -379,7 +383,7 @@
   }
 
   .card__social-icons {
-    height: 2.3rem;
+    height: $size-icons;
   }
 
   .section-about {
@@ -397,7 +401,7 @@
 
     &__text {
       font-family: var(--font-family-title);
-      font-size: 3rem;
+      font-size: $size-title;
       font-weight: 700;
       color: var(--cor-principal);
     }
@@ -414,7 +418,7 @@
 
   .about__text-story {
     margin-top: 1rem;
-    font-size: 1.5rem;
+    font-size: $font-size--normal;
     text-align: justify;
     color: var(--cor-texto);
     line-height: 1.8rem;
@@ -423,12 +427,12 @@
   .about--icon {
     filter: var(--cor-light-icons-secundaria);
     padding-left: 0.5rem;
-    height: 2rem;
+    height: $size-icons;
   }
 
   .btn {
     margin-top: 1rem;
-    font-size: 1.5rem;
+    font-size: $font-size--normal;
     letter-spacing: 0.3rem;
     padding: 1rem;
     width: 17rem;
@@ -442,14 +446,10 @@
     display: block;
   }
 
-  .services-section {
-    padding: 5rem 0;
-  }
-
   .services-title {
     text-align: center;
     font-family: var(--font-family-title);
-    font-size: 3rem;
+    font-size: $size-title;
     font-weight: 700;
     color: var(--cor-principal);
   }
@@ -476,7 +476,7 @@
 
     &__card-text {
       margin-top: 1rem;
-      font-size: 2rem;
+      font-size: $font-size--medium;
       font-weight: 700;
       text-transform: uppercase;
       text-align: justify;
@@ -490,7 +490,7 @@
 
     .services__card-list {
       margin-top: 1rem;
-      font-size: 1.5rem;
+      font-size: $font-size--normal;
       gap: 2rem;
     }
   }
@@ -505,11 +505,15 @@
     &__text {
       margin-top: 2.5rem;
       font-family: var(--font-family-principal);
-      font-size: 1.5rem;
+      font-size: $font-size--normal;
       font-weight: 700;
       text-transform: uppercase;
       color: var(--cor-texto);
     }
+  }
+
+  .section-projects__title {
+    font-size: $size-title;
   }
 
   .btn--projects {
@@ -520,7 +524,7 @@
     padding: 0rem;
 
     &__title {
-      font-size: 3rem;
+      font-size: $size-title;
     }
 
     &__box {
@@ -567,7 +571,7 @@
   }
 
   .input-contact {
-    font-size: 1.5rem;
+    font-size: $font-size--normal;
     font-weight: 400;
     width: 35rem;
     height: 3.5rem;
@@ -579,7 +583,7 @@
   }
 
   .input__textarea {
-    font-size: 1.5rem;
+    font-size: $font-size--normal;
     height: 15rem;
     padding: 0.8rem;
     border-radius: 2rem;
@@ -611,49 +615,33 @@
   .subscription .square {
     display: none;
   }
-
-  .scroll-top {
-    position: fixed;
-    bottom: -100%;
-    transition: 0.7s;
-    left: 0;
-  }
-
-  .scroll-active {
-    bottom: 10rem;
-    transition: 0.3s;
-  }
 }
 
 @include for-size(tablet-landscape-up) {
-  .header {
-    min-height: 100vh;
-    width: 100%;
-    overflow-x: hidden !important;
-  }
+  $font-size--normal: 1.5rem;
+  $font-size--medium: 2rem;
+  $font-size--big: 3rem;
+  $size-title: 3.5rem;
+  $size-icons: 2rem;
 
   .boxInitial {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+    &__card {
+      position: relative;
+      width: 25rem;
+      height: 30rem;
+      background: var(--cor-clara);
+      box-shadow: 0.3rem 0.5rem 0.6rem var(--cor-principal);
+    }
 
-  .boxInitial__card {
-    position: relative;
-    width: 25rem;
-    height: 30rem;
-    background: var(--cor-clara);
-    box-shadow: 0.3rem 0.5rem 0.6rem var(--cor-principal);
-  }
-
-  .boxInitial__card-img {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 15rem;
-    background: var(--cor-principal);
-    border-radius: 0 0 10rem 0;
+    &__card-img {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 15rem;
+      background: var(--cor-principal);
+      border-radius: 0 0 10rem 0;
+    }
   }
 
   .image-section {
@@ -663,23 +651,16 @@
     border-radius: 50%;
   }
 
-  .boxInitial__card-info {
-    display: flex;
-    flex-direction: column;
-    row-gap: 1rem;
-    margin-top: 2rem;
-  }
-
   .card__text {
     font-family: var(--font-family-principal);
-    font-size: 2rem;
+    font-size: $font-size--medium;
     font-weight: 700;
     color: var(--cor-principal);
     text-align: center;
   }
 
   .card__text--profi {
-    font-size: 1.5rem;
+    font-size: $font-size--normal;
   }
 
   .card__social {
@@ -690,7 +671,7 @@
   }
 
   .card__social-icons {
-    height: 2.3rem;
+    height: $size-icons;
   }
 
   .section-about {
@@ -703,12 +684,12 @@
     &__img {
       width: 100%;
       object-fit: cover;
-      height: 30rem;
+      height: 35rem;
     }
 
     &__text {
       font-family: var(--font-family-title);
-      font-size: 3rem;
+      font-size: $size-title;
       font-weight: 700;
       color: var(--cor-principal);
     }
@@ -725,7 +706,7 @@
 
   .about__text-story {
     margin-top: 1rem;
-    font-size: 1.5rem;
+    font-size: $font-size--normal;
     text-align: justify;
     color: var(--cor-texto);
     line-height: 1.8rem;
@@ -734,12 +715,12 @@
   .about--icon {
     filter: var(--cor-light-icons-secundaria);
     padding-left: 0.5rem;
-    height: 2rem;
+    height: $size-icons;
   }
 
   .btn {
     margin-top: 1rem;
-    font-size: 1.5rem;
+    font-size: $font-size--normal;
     letter-spacing: 0.3rem;
     padding: 1rem;
   }
@@ -752,14 +733,10 @@
     display: none;
   }
 
-  .services-section {
-    padding: 5rem 0;
-  }
-
   .services-title {
     text-align: center;
     font-family: var(--font-family-title);
-    font-size: 3rem;
+    font-size: $size-title;
     font-weight: 700;
     color: var(--cor-principal);
   }
@@ -822,6 +799,10 @@
     }
   }
 
+  .section-projects__title {
+    font-size: $size-title;
+  }
+
   .btn--projects {
     width: 11rem;
   }
@@ -830,7 +811,7 @@
     padding: 0rem;
 
     &__title {
-      font-size: 3rem;
+      font-size: $size-title;
     }
 
     &__box {
@@ -877,7 +858,7 @@
   }
 
   .input-contact {
-    font-size: 1.5rem;
+    font-size: $font-size--normal;
     font-weight: 400;
     width: 35rem;
     height: 3.5rem;
@@ -889,7 +870,7 @@
   }
 
   .input__textarea {
-    font-size: 1.5rem;
+    font-size: $font-size--normal;
     height: 15rem;
     padding: 0.8rem;
     border-radius: 2rem;
@@ -902,7 +883,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 5px;
+    padding: 2rem 0.5rem;
     width: 100%;
   }
 
@@ -938,59 +919,39 @@
   }
 
   .subscription__title {
-    font-size: 2rem;
+    font-size: $font-size--medium;
   }
 
   .subscription__box__secondary .subscription__heading {
     font-size: 1.7rem;
   }
-
-  .subscription .square {
-    display: none;
-  }
-
-  .scroll-top {
-    position: fixed;
-    bottom: -100%;
-    transition: 0.7s;
-    left: 0;
-  }
-
-  .scroll-active {
-    bottom: 10rem;
-    transition: 0.3s;
-  }
 }
 
 @include for-size(desktop-up) {
-  .header {
-    min-height: 100vh;
-    width: 100%;
-    overflow-x: hidden !important;
-  }
+  $font-size--normal: 1.5rem;
+  $font-size--medium: 2rem;
+  $font-size--big: 3rem;
+  $size-title: 3.5rem;
+  $size-icons: 2rem;
 
   .boxInitial {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+    &__card {
+      position: relative;
+      width: 25rem;
+      height: 30rem;
+      background: var(--cor-clara);
+      box-shadow: 0.3rem 0.5rem 0.6rem var(--cor-principal);
+    }
 
-  .boxInitial__card {
-    position: relative;
-    width: 25rem;
-    height: 30rem;
-    background: var(--cor-clara);
-    box-shadow: 0.3rem 0.5rem 0.6rem var(--cor-principal);
-  }
-
-  .boxInitial__card-img {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 15rem;
-    background: var(--cor-principal);
-    border-radius: 0 0 10rem 0;
+    &__card-img {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 15rem;
+      background: var(--cor-principal);
+      border-radius: 0 0 10rem 0;
+    }
   }
 
   .image-section {
@@ -1000,23 +961,16 @@
     border-radius: 50%;
   }
 
-  .boxInitial__card-info {
-    display: flex;
-    flex-direction: column;
-    row-gap: 1rem;
-    margin-top: 2rem;
-  }
-
   .card__text {
     font-family: var(--font-family-principal);
-    font-size: 2rem;
+    font-size: $font-size--medium;
     font-weight: 700;
     color: var(--cor-principal);
     text-align: center;
   }
 
   .card__text--profi {
-    font-size: 1.5rem;
+    font-size: $font-size--normal;
   }
 
   .card__social {
@@ -1027,7 +981,7 @@
   }
 
   .card__social-icons {
-    height: 2.3rem;
+    height: $size-icons;
   }
 
   .section-about {
@@ -1037,15 +991,10 @@
       display: flex;
       flex-direction: column;
     }
-    &__img {
-      width: 100%;
-      object-fit: cover;
-      height: 30rem;
-    }
 
     &__text {
       font-family: var(--font-family-title);
-      font-size: 3rem;
+      font-size: $size-title;
       font-weight: 700;
       color: var(--cor-principal);
     }
@@ -1062,7 +1011,7 @@
 
   .about__text-story {
     margin-top: 1rem;
-    font-size: 1.5rem;
+    font-size: $font-size--normal;
     text-align: justify;
     color: var(--cor-texto);
     line-height: 1.8rem;
@@ -1071,25 +1020,13 @@
   .about--icon {
     filter: var(--cor-light-icons-secundaria);
     padding-left: 0.5rem;
-    height: 2rem;
-  }
-
-  .menu-icon {
-    z-index: 1060;
-  }
-
-  .menu-icon .line-menu {
-    display: none;
-  }
-
-  .services-section {
-    padding: 5rem 0;
+    height: $size-icons;
   }
 
   .services-title {
     text-align: center;
     font-family: var(--font-family-title);
-    font-size: 3rem;
+    font-size: $size-title;
     font-weight: 700;
     color: var(--cor-principal);
   }
@@ -1116,7 +1053,7 @@
 
     &__card-text {
       margin-top: 2rem;
-      font-size: 2rem;
+      font-size: $font-size--medium;
       font-weight: 700;
       text-transform: uppercase;
       text-align: justify;
@@ -1130,7 +1067,7 @@
 
     .services__card-list {
       margin-top: 2rem;
-      font-size: 1.5rem;
+      font-size: $font-size--normal;
       gap: 2rem;
     }
   }
@@ -1145,11 +1082,15 @@
     &__text {
       margin-top: 2.5rem;
       font-family: var(--font-family-principal);
-      font-size: 1.5rem;
+      font-size: $font-size--normal;
       font-weight: 700;
       text-transform: uppercase;
       color: var(--cor-texto);
     }
+  }
+
+  .section-projects__title {
+    font-size: $size-title;
   }
 
   .btn--projects {
@@ -1160,7 +1101,7 @@
     padding: 0rem;
 
     &__title {
-      font-size: 3rem;
+      font-size: $size-title;
     }
 
     &__box {
@@ -1207,7 +1148,7 @@
   }
 
   .input-contact {
-    font-size: 1.5rem;
+    font-size: $font-size--normal;
     font-weight: 400;
     width: 35rem;
     height: 3.5rem;
@@ -1219,7 +1160,7 @@
   }
 
   .input__textarea {
-    font-size: 1.5rem;
+    font-size: $font-size--normal;
     height: 15rem;
     padding: 0.8rem;
     border-radius: 2rem;
@@ -1246,7 +1187,7 @@
   }
 
   .subscription__title {
-    font-size: 2.5rem;
+    font-size: $font-size--big;
   }
 
   .subscription__form-msg {
@@ -1254,27 +1195,8 @@
   }
 
   .subscription__box__secondary .subscription__heading {
-    font-size: 1.7rem;
+    font-size: $font-size--medium;
     margin-top: 2rem;
-  }
-
-  .subscription .square {
-    position: absolute;
-    left: 52%;
-    bottom: 7%;
-    transform: translate(0, -50%) scale(0.95);
-  }
-
-  .scroll-top {
-    position: fixed;
-    bottom: -100%;
-    transition: 0.7s;
-    left: 0;
-  }
-
-  .scroll-active {
-    bottom: 10rem;
-    transition: 0.3s;
   }
 }
 
@@ -1319,13 +1241,6 @@
     height: 19rem;
     object-fit: cover;
     border-radius: 50%;
-  }
-
-  .boxInitial__card-info {
-    display: flex;
-    flex-direction: column;
-    row-gap: 1rem;
-    margin-top: 2rem;
   }
 
   .card__text {
@@ -1411,10 +1326,6 @@
     display: none;
   }
 
-  .services-section {
-    padding: 5rem 0;
-  }
-
   .services-title {
     text-align: center;
     font-family: var(--font-family-title);
@@ -1483,6 +1394,10 @@
       text-transform: uppercase;
       color: var(--cor-texto);
     }
+  }
+
+  .section-projects__title {
+    font-size: $size-title;
   }
 
   .btn--projects {

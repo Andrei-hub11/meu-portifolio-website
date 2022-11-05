@@ -781,7 +781,7 @@ input::placeholder {
   body {
     overflow-x: hidden !important; }
   .header {
-    min-height: 100vw;
+    min-height: 100vh;
     width: 100%;
     overflow-x: hidden !important; }
   .boxInitial {
@@ -819,7 +819,7 @@ input::placeholder {
     color: var(--cor-principal);
     text-align: center; }
   .card__text--profi {
-    font-size: 1.2rem; }
+    font-size: 1.4rem; }
   .card__social {
     display: flex;
     justify-content: center;
@@ -850,7 +850,7 @@ input::placeholder {
     gap: 1.5rem; }
   .about__text-story {
     margin-top: 1rem;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     text-align: justify;
     color: var(--cor-texto);
     line-height: 1.8rem; }
@@ -860,7 +860,7 @@ input::placeholder {
     height: 2rem; }
   .btn {
     margin-top: 1rem;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     letter-spacing: 0.3rem;
     padding: 1rem;
     width: 15rem; }
@@ -903,12 +903,14 @@ input::placeholder {
       filter: var(--cor-light-icons-secundaria); }
     .services .services__card-list {
       margin-top: 1rem;
-      font-size: 1.2rem;
+      font-size: 1.4rem;
       gap: 1rem; }
+  .section-projects__title {
+    font-size: 3rem; }
   .contact {
     padding: 0rem; }
     .contact__title {
-      font-size: 3rem; }
+      font-size: 1.4rem; }
     .contact__box {
       margin-top: 15rem;
       position: relative;
@@ -935,14 +937,14 @@ input::placeholder {
       border-radius: 2rem;
       background: var(--cor-principal); }
     .contact__form-msg {
-      font-size: 1.2rem;
+      font-size: 1.4rem;
       font-weight: 700;
       bottom: -1rem; }
     .contact__form-control {
       top: 3rem;
       padding: 10px 0; }
   .input-contact {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-weight: 400;
     width: 35rem;
     height: 3.5rem;
@@ -952,7 +954,7 @@ input::placeholder {
     color: #333;
     padding-left: 1rem; }
   .input__textarea {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     height: 15rem;
     padding: 0.8rem;
     border-radius: 2rem;
@@ -1001,14 +1003,6 @@ input::placeholder {
     transition: 0.3s; } }
 
 @media (min-width: 786px) {
-  .header {
-    min-height: 100vh;
-    width: 100%;
-    overflow-x: hidden !important; }
-  .boxInitial {
-    display: flex;
-    justify-content: center;
-    align-items: center; }
   .boxInitial__card {
     position: relative;
     width: 25rem;
@@ -1047,7 +1041,7 @@ input::placeholder {
     align-items: center;
     column-gap: 1.5rem; }
   .card__social-icons {
-    height: 2.3rem; }
+    height: 2rem; }
   .section-about {
     padding: 15rem 0; }
     .section-about__box-secondary {
@@ -1089,8 +1083,6 @@ input::placeholder {
     z-index: 1060; }
   .menu-icon .line-menu {
     display: block; }
-  .services-section {
-    padding: 5rem 0; }
   .services-title {
     text-align: center;
     font-family: var(--font-family-title);
@@ -1139,6 +1131,8 @@ input::placeholder {
       font-weight: 700;
       text-transform: uppercase;
       color: var(--cor-texto); }
+  .section-projects__title {
+    font-size: 3rem; }
   .btn--projects {
     width: 11rem; }
   .contact {
@@ -1208,25 +1202,9 @@ input::placeholder {
   .subscription__box__secondary .subscription__heading {
     font-size: 1.7rem; }
   .subscription .square {
-    display: none; }
-  .scroll-top {
-    position: fixed;
-    bottom: -100%;
-    transition: 0.7s;
-    left: 0; }
-  .scroll-active {
-    bottom: 10rem;
-    transition: 0.3s; } }
+    display: none; } }
 
 @media (min-width: 900px) {
-  .header {
-    min-height: 100vh;
-    width: 100%;
-    overflow-x: hidden !important; }
-  .boxInitial {
-    display: flex;
-    justify-content: center;
-    align-items: center; }
   .boxInitial__card {
     position: relative;
     width: 25rem;
@@ -1246,11 +1224,6 @@ input::placeholder {
     height: 13rem;
     object-fit: cover;
     border-radius: 50%; }
-  .boxInitial__card-info {
-    display: flex;
-    flex-direction: column;
-    row-gap: 1rem;
-    margin-top: 2rem; }
   .card__text {
     font-family: var(--font-family-principal);
     font-size: 2rem;
@@ -1265,7 +1238,7 @@ input::placeholder {
     align-items: center;
     column-gap: 1.5rem; }
   .card__social-icons {
-    height: 2.3rem; }
+    height: 2rem; }
   .section-about {
     padding: 15rem 0; }
     .section-about__box-secondary {
@@ -1274,10 +1247,10 @@ input::placeholder {
     .section-about__img {
       width: 100%;
       object-fit: cover;
-      height: 30rem; }
+      height: 35rem; }
     .section-about__text {
       font-family: var(--font-family-title);
-      font-size: 3rem;
+      font-size: 3.5rem;
       font-weight: 700;
       color: var(--cor-principal); }
   .box-main {
@@ -1306,12 +1279,10 @@ input::placeholder {
     z-index: 1060; }
   .menu-icon .line-menu {
     display: none; }
-  .services-section {
-    padding: 5rem 0; }
   .services-title {
     text-align: center;
     font-family: var(--font-family-title);
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-weight: 700;
     color: var(--cor-principal); }
   .services {
@@ -1356,12 +1327,14 @@ input::placeholder {
       font-weight: 700;
       text-transform: uppercase;
       color: var(--cor-texto); }
+  .section-projects__title {
+    font-size: 3.5rem; }
   .btn--projects {
     width: 11rem; }
   .contact {
     padding: 0rem; }
     .contact__title {
-      font-size: 3rem; }
+      font-size: 3.5rem; }
     .contact__box {
       margin-top: 15rem;
       position: relative;
@@ -1416,7 +1389,7 @@ input::placeholder {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 5px;
+    padding: 2rem 0.5rem;
     width: 100%; }
   .navbar {
     position: unset;
@@ -1444,27 +1417,9 @@ input::placeholder {
   .subscription__title {
     font-size: 2rem; }
   .subscription__box__secondary .subscription__heading {
-    font-size: 1.7rem; }
-  .subscription .square {
-    display: none; }
-  .scroll-top {
-    position: fixed;
-    bottom: -100%;
-    transition: 0.7s;
-    left: 0; }
-  .scroll-active {
-    bottom: 10rem;
-    transition: 0.3s; } }
+    font-size: 1.7rem; } }
 
 @media (min-width: 1200px) {
-  .header {
-    min-height: 100vh;
-    width: 100%;
-    overflow-x: hidden !important; }
-  .boxInitial {
-    display: flex;
-    justify-content: center;
-    align-items: center; }
   .boxInitial__card {
     position: relative;
     width: 25rem;
@@ -1484,11 +1439,6 @@ input::placeholder {
     height: 13rem;
     object-fit: cover;
     border-radius: 50%; }
-  .boxInitial__card-info {
-    display: flex;
-    flex-direction: column;
-    row-gap: 1rem;
-    margin-top: 2rem; }
   .card__text {
     font-family: var(--font-family-principal);
     font-size: 2rem;
@@ -1503,19 +1453,15 @@ input::placeholder {
     align-items: center;
     column-gap: 1.5rem; }
   .card__social-icons {
-    height: 2.3rem; }
+    height: 2rem; }
   .section-about {
     padding: 15rem 0; }
     .section-about__box-secondary {
       display: flex;
       flex-direction: column; }
-    .section-about__img {
-      width: 100%;
-      object-fit: cover;
-      height: 30rem; }
     .section-about__text {
       font-family: var(--font-family-title);
-      font-size: 3rem;
+      font-size: 3.5rem;
       font-weight: 700;
       color: var(--cor-principal); }
   .box-main {
@@ -1535,16 +1481,10 @@ input::placeholder {
     filter: var(--cor-light-icons-secundaria);
     padding-left: 0.5rem;
     height: 2rem; }
-  .menu-icon {
-    z-index: 1060; }
-  .menu-icon .line-menu {
-    display: none; }
-  .services-section {
-    padding: 5rem 0; }
   .services-title {
     text-align: center;
     font-family: var(--font-family-title);
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-weight: 700;
     color: var(--cor-principal); }
   .services {
@@ -1589,12 +1529,14 @@ input::placeholder {
       font-weight: 700;
       text-transform: uppercase;
       color: var(--cor-texto); }
+  .section-projects__title {
+    font-size: 3.5rem; }
   .btn--projects {
     width: 11rem; }
   .contact {
     padding: 0rem; }
     .contact__title {
-      font-size: 3rem; }
+      font-size: 3.5rem; }
     .contact__box {
       margin-top: 15rem;
       position: relative;
@@ -1655,25 +1597,12 @@ input::placeholder {
   .subscription__box__secondary {
     grid-template-columns: 1fr auto; }
   .subscription__title {
-    font-size: 2.5rem; }
+    font-size: 3rem; }
   .subscription__form-msg {
     bottom: -2.5rem; }
   .subscription__box__secondary .subscription__heading {
-    font-size: 1.7rem;
-    margin-top: 2rem; }
-  .subscription .square {
-    position: absolute;
-    left: 52%;
-    bottom: 7%;
-    transform: translate(0, -50%) scale(0.95); }
-  .scroll-top {
-    position: fixed;
-    bottom: -100%;
-    transition: 0.7s;
-    left: 0; }
-  .scroll-active {
-    bottom: 10rem;
-    transition: 0.3s; } }
+    font-size: 2rem;
+    margin-top: 2rem; } }
 
 @media (min-width: 1800px) {
   .nav-link {
@@ -1702,11 +1631,6 @@ input::placeholder {
     height: 19rem;
     object-fit: cover;
     border-radius: 50%; }
-  .boxInitial__card-info {
-    display: flex;
-    flex-direction: column;
-    row-gap: 1rem;
-    margin-top: 2rem; }
   .card__text {
     font-family: var(--font-family-principal);
     font-size: 2.5rem;
@@ -1763,8 +1687,6 @@ input::placeholder {
     z-index: 1060; }
   .menu-icon .line-menu {
     display: none; }
-  .services-section {
-    padding: 5rem 0; }
   .services-title {
     text-align: center;
     font-family: var(--font-family-title);
@@ -1815,6 +1737,8 @@ input::placeholder {
       font-weight: 700;
       text-transform: uppercase;
       color: var(--cor-texto); }
+  .section-projects__title {
+    font-size: 4rem; }
   .btn--projects {
     width: 13rem; }
   .contact {
