@@ -799,7 +799,7 @@ input::placeholder {
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 15rem;
+    height: 14rem;
     background: var(--cor-principal);
     border-radius: 0 0 10rem 0; }
   .image-section {
@@ -819,7 +819,7 @@ input::placeholder {
     color: var(--cor-principal);
     text-align: center; }
   .card__text--profi {
-    font-size: 1.4rem; }
+    font-size: 1.2rem; }
   .card__social {
     display: flex;
     justify-content: center;
@@ -850,7 +850,7 @@ input::placeholder {
     gap: 1.5rem; }
   .about__text-story {
     margin-top: 1rem;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     text-align: justify;
     color: var(--cor-texto);
     line-height: 1.8rem; }
@@ -860,7 +860,7 @@ input::placeholder {
     height: 2rem; }
   .btn {
     margin-top: 1rem;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     letter-spacing: 0.3rem;
     padding: 1rem;
     width: 15rem; }
@@ -903,14 +903,17 @@ input::placeholder {
       filter: var(--cor-light-icons-secundaria); }
     .services .services__card-list {
       margin-top: 1rem;
-      font-size: 1.4rem;
+      font-size: 1.2rem;
       gap: 1rem; }
+  .projects {
+    grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+    grid-auto-rows: 35rem; }
   .section-projects__title {
     font-size: 3rem; }
   .contact {
     padding: 0rem; }
     .contact__title {
-      font-size: 1.4rem; }
+      font-size: 3rem; }
     .contact__box {
       margin-top: 15rem;
       position: relative;
@@ -937,14 +940,14 @@ input::placeholder {
       border-radius: 2rem;
       background: var(--cor-principal); }
     .contact__form-msg {
-      font-size: 1.4rem;
+      font-size: 1.2rem;
       font-weight: 700;
       bottom: -1rem; }
     .contact__form-control {
       top: 3rem;
       padding: 10px 0; }
   .input-contact {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: 400;
     width: 35rem;
     height: 3.5rem;
@@ -954,7 +957,7 @@ input::placeholder {
     color: #333;
     padding-left: 1rem; }
   .input__textarea {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     height: 15rem;
     padding: 0.8rem;
     border-radius: 2rem;
