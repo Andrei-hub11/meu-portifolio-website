@@ -937,7 +937,7 @@
   $font-size--medium: 2rem;
   $font-size--big: 3rem;
   $size-title: 3.5rem;
-  $size-icons: 2rem;
+  $size-icons: 2.5rem;
 
   .boxInitial {
     &__card {
@@ -1026,6 +1026,11 @@
     filter: var(--cor-light-icons-secundaria);
     padding-left: 0.5rem;
     height: $size-icons;
+  }
+
+  .btn {
+    font-size: $font-size--normal;
+    width: 18rem;
   }
 
   .services-title {

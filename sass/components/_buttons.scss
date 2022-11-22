@@ -56,6 +56,10 @@ svg path {
   transition: 1s;
 }
 
+.btnText {
+  text-align: center;
+}
+
 .active svg path {
   stroke-dashoffset: 0;
   transition: 1s;

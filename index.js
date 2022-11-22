@@ -231,7 +231,7 @@ const shippingAnimation = () => {
   btntext.innerText = "Obrigado";
   BTN_CONTACT.classList.add("active");
   setTimeout(() => {
-    sendEmail(NAME.value, EMAIL.value, CAMPO_MSG.value);
+    sendEmail("Andrei", EMAIL.value, CAMPO_MSG.value);
     restartForm();
     BTN_CONTACT.classList.remove("active");
     btntext.innerText = "Enviar";
