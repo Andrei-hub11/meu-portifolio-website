@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss css/styles.css -w"
+    "compile:sass": "node-sass sass/main.scss css/styles.css -w",
+    "start": "npm run open",
+    "open": "concurrently \"http-server -a localhost -p 1234\" \"open http://localhost:1234/build\""
   },
   "keywords": [],
   "author": "",
@@ -12,5 +14,9 @@
   "dependencies": {
     "node-sass": "^7.0.3",
     "scrollreveal": "^4.0.9"
+  },
+  "devDependencies": {
+    "concurrently": "^7.6.0",
+    "http-server": "^14.1.1"
   }
 }
