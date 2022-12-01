@@ -885,7 +885,7 @@ input::placeholder {
       color: var(--cor-principal); }
   .box-main {
     width: 100%;
-    max-width: 30rem;
+    max-width: 35rem;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(35rem, 1fr));
@@ -1035,6 +1035,10 @@ input::placeholder {
     align-items: center;
     justify-content: center;
     text-align: center; }
+  .subscription__box__secondary form {
+    display: grid;
+    grid-template-columns: 20rem;
+    column-gap: 2rem; }
   .subscription__box__secondary .subscription__heading {
     font-size: 1.7rem; }
   .subscription .square {
@@ -1114,7 +1118,7 @@ input::placeholder {
       color: var(--cor-principal); }
   .box-main {
     width: 100%;
-    max-width: 30rem;
+    max-width: 35rem;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(35rem, 1fr));
