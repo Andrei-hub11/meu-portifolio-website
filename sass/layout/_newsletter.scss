@@ -75,8 +75,8 @@
 
 .subscription__box__secondary form {
   display: grid;
-  grid-template-columns: 1fr auto;
-  column-gap: 1.5rem;
+  grid-template-columns: 1fr;
+  row-gap: 3rem;
 }
 
 .subscription--data {

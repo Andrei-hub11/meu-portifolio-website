@@ -4,7 +4,7 @@
       @content;
     }
   } @else if ($size == phone-only) {
-    @media (min-width: 600) {
+    @media (min-width: 600px) {
       @content;
     }
   } @else if ($size == tablet-portrait-up) {

@@ -745,8 +745,8 @@ input::placeholder {
 
 .subscription__box__secondary form {
   display: grid;
-  grid-template-columns: 1fr auto;
-  column-gap: 1.5rem; }
+  grid-template-columns: 1fr;
+  row-gap: 3rem; }
 
 .subscription--data {
   position: relative;
@@ -921,8 +921,9 @@ input::placeholder {
   .services {
     margin-top: 5rem;
     display: flex;
-    justify-content: space-evenly;
-    align-items: center; }
+    align-items: center;
+    flex-direction: column;
+    row-gap: 2rem; }
     .services__card {
       background: var(--cor-principal);
       height: 26rem;
@@ -1047,7 +1048,7 @@ input::placeholder {
     bottom: 10rem;
     transition: 0.3s; } }
 
-@media (min-width: 600) {
+@media (min-width: 600px) {
   body {
     overflow-x: hidden !important; }
   .header {
@@ -1472,6 +1473,10 @@ input::placeholder {
     align-items: center;
     justify-content: center;
     text-align: center; }
+  .subscription__box__secondary form {
+    display: grid;
+    grid-template-columns: 1fr 20rem;
+    column-gap: 2rem; }
   .subscription__box__secondary .subscription__heading {
     font-size: 1.7rem; }
   .subscription .square {
@@ -1872,6 +1877,10 @@ input::placeholder {
     max-width: none; }
   .subscription__box__secondary {
     grid-template-columns: 1fr auto; }
+  .subscription__box__secondary form {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    column-gap: 1rem; }
   .subscription__title {
     font-size: 3rem; }
   .subscription__form-msg {
