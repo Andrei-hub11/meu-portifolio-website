@@ -28,9 +28,7 @@ Clone o repositorio e, com a instalação das depêndencias, teste-o como quiser
 
 ![portifolio__contatos](https://user-images.githubusercontent.com/83555334/203493555-0b0eab3b-e574-4a4a-9287-a14dbbc33a73.jpeg)
 
-### Validação
 
-![portifolio__contatos__validação](https://user-images.githubusercontent.com/83555334/203494172-568e6c48-2143-4552-b83d-5e36454a6068.jpeg)
 
 ### Animação
 
