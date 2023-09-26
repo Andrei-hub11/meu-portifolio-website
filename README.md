@@ -30,9 +30,6 @@ Clone o repositorio e, com a instalação das depêndencias, teste-o como quiser
 
 
 
-### Animação
-
-![portifolio__contatos__animação](https://user-images.githubusercontent.com/83555334/203494383-f762594a-5841-44a9-9c57-a9ea2ce9440e.jpeg)
 
 ### Newsletter e Footer section
 
