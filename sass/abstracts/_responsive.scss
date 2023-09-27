@@ -153,6 +153,7 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    flex-direction: column;
     row-gap: 2rem;
 
     &__card {
@@ -501,7 +502,6 @@
     margin-top: 5rem;
     display: flex;
     justify-content: space-evenly;
-
     align-items: center;
 
     &__card {

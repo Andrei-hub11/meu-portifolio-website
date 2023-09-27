@@ -933,6 +933,7 @@ input::placeholder {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    flex-direction: column;
     row-gap: 2rem; }
     .services__card {
       background: var(--cor-principal);
