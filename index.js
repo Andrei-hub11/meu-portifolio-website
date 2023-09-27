@@ -7,6 +7,7 @@ const sectionServices = document.getElementsByClassName("nav-link")[1];
 const sectionProjects = document.getElementsByClassName("nav-link")[2];
 const sectionContact = document.getElementsByClassName("nav-link")[3];
 const toTop = document.getElementsByClassName("icon--arrow")[0];
+const downloadBtn = document.getElementsByClassName("download-pdf")[0];
 
 let darkModeState = false;
 
@@ -42,18 +43,6 @@ const usedark = matchMedia("(prefers-color-scheme: dark)");
 /* para pegar o tema atual */
 const usetheme = matchMedia("(prefers-color-scheme: dark)").matches;
 
-/* const checkingThemePreference = (state) => {
-  console.log(state);
-  if (state === true) {
-    toggleBtn.checked = true;
-    darkModeState = state;
-    changeDarkMode(true);
-  } else {
-    darkModeState = state;
-    changeDarkMode(false);
-  }
-}; */
-
 usedark.addListener((evt) => {
   changeDarkMode(evt.matches);
 });
@@ -71,6 +60,34 @@ const checkLocalStorage = () => {
 };
 
 checkLocalStorage();
+
+const profileUrl = [
+  {
+    url: "https://www.instagram.com/andrey_b22/",
+  },
+  {
+    url: "https://twitter.com/Andrey66892826",
+  },
+];
+
+const redirectingPage = (id) => {
+  const index = parseInt(id);
+  let url = profileUrl[index].url;
+  window.open(url, "_blank");
+};
+
+const downloadPDF = () => {
+  let pdfURL = "utils/curriculo-andrei.pdf";
+
+  let link = document.createElement("a");
+  link.href = pdfURL;
+
+  // Define o atributo "download" para o nome do arquivo
+  link.download = "curriculo-andrei.pdf";
+
+  // Simula um clique no link para iniciar o download
+  link.click();
+};
 
 const BTN_CONTACT = document.getElementsByClassName("btn--contact")[0];
 const btntext = document.getElementById("btnText");
@@ -173,7 +190,7 @@ const setErrorTextArea = (input, message) => {
 const setSuccessTextArea = (input) => {
   const formControl = input.parentElement;
 
-  CAMPO_MSG.style.border = "none";
+  CAMPO_MSG.style.border = "1px solid #fff";
 
   formControl.className = "contact__form-control textarea--data success";
 };
@@ -255,7 +272,14 @@ const restartForm = () => {
   const controlElements = [
     ...document.querySelectorAll(".contact__form-control"),
   ];
-  CAMPO_MSG.style.border = "none";
+  const labels = [...document.querySelectorAll(".contact__label")];
+
+  labels.forEach(function (label) {
+    label.style.top = "2rem";
+    label.style.fontSize = "1.5rem";
+  });
+
+  CAMPO_MSG.style.border = "1px solid #fff";
   CAMPO_MSG.value = "";
   NAME.value = "";
   EMAIL.value = "";
@@ -331,19 +355,6 @@ sectionProjects.onclick = () => {
     top: topPos, // scroll so that the element is at the top of the view
     behavior: "smooth", // smooth scroll
   });
-
-  /* const element = document.querySelector("#projectsId");
-  console.log(element);
-  const rect = element.getBoundingClientRect(); // get rects(width, height, top, etc)
-  const viewHeight = Math.max(
-    document.documentElement.clientHeight,
-    window.innerHeight || 0
-  );
-
-  window.scroll({
-    top: rect.top + rect.height / 2 - viewHeight / 2,
-    behavior: "smooth", // smooth scroll
-  }); */
 };
 
 sectionContact.onclick = () => {
@@ -372,8 +383,6 @@ document.addEventListener("click", (e) => {
   if (isCloset) scrolltoHome || scrollTop.click();
 });
 
-/* !!Bug a ser resolvido na função abaixo. O botão de rolagem para o topo não funciona quando sobre uma seção com form. Shadow DOM */
-
 const scrolltoHome = () => {
   const element = document.querySelector("#home");
   const topPos = element.getBoundingClientRect().top + window.pageYOffset;
@@ -383,13 +392,3 @@ const scrolltoHome = () => {
     behavior: "smooth",
   });
 };
-
-/* scrollTop.onclick = () => {
-  const element = document.querySelector("#home");
-  const topPos = element.getBoundingClientRect().top + window.pageYOffset;
-
-  window.scrollTo({
-    top: topPos,
-    behavior: "smooth",
-  });
-}; */

@@ -49,26 +49,30 @@
           </div>
           <div class="boxInitial__card-info">
             <p class="card__text">Andrei Rodrigues</p>
-            <p class="card__text card__text--profi">Desenvolvedor Front-End</p>
+            <p class="card__text card__text--profi">Desenvolvedor Web</p>
             <div class="card__social">
               <a href=""
                 ><img
                   class="card__social-icons icons--hover"
+                  id="0"
                   src="/images/bxl-instagram.svg"
                   alt=""
+                  onclick="redirectingPage(this.id)"
               /></a>
               <a href=""
                 ><img
                   class="card__social-icons icons--hover"
+                  id="1"
                   src="/images/bxl-twitter.svg"
                   alt=""
+                  onclick="redirectingPage(this.id)"
               /></a>
-              <a href=""
+              <!-- <a href=""
                 ><img
                   class="card__social-icons icons--hover"
                   src="/images/bxl-whatsapp.svg"
                   alt=""
-              /></a>
+              /></a> -->
             </div>
           </div>
         </div>
@@ -83,14 +87,17 @@
         <div class="section-about__box-secondary">
           <p class="section-about__text about__text-title">Sobre mim</p>
           <p class="section-about__text about__text-story">
-            Meu nome é Andrei Rodrigues. Sou um desenvolvedor Front-End, que
-            atualmente está evoluindo como um desenvolvedor Fullstack. Trabalhei
-            no construção de alguns trabalhos, para fins de prática e sites
-            responsivos, como este, mas nada profissional. Gosto de estudar
-            novas tecnologias. E realmente espero conseguir alguma oportunidade
-            de emprego em breve.
+            Sou Andrei Rodrigues, um entusiasta do mundo digital apaixonado por
+            transformar ideias em realidade digital. Embora eu ainda não tenha
+            experiência profissional, minhas habilidades em JavaScript,
+            CSS/SCSS, HTML, React, Express e MongoDB, que me capacitam para
+            criar aplicações web cativantes. Também tenho conhecimento básico em
+            Docker e Figma, o que amplia minha versatilidade. Estou ansioso para
+            iniciar minha jornada profissional e estou comprometido em entregar
+            resultados de alta qualidade para cada projeto que assumo. Vamos
+            trabalhar juntos para criar algo incrível!
           </p>
-          <a href="" class="btn"
+          <a href="" class="btn download-pdf" onclick="downloadPDF()"
             >Download CV
             <img
               class="card__social-icons about--icon"
@@ -109,97 +116,77 @@
             <p class="services__card-text">Ui/Ux</p>
           </div>
           <div class="services__card-list">
-            <p>
+            <div class="services__card-list__container">
               <img
                 src="/images/bx-check.svg"
                 alt=""
                 class="services__card-icon card__social-icons"
-              />Lorem ipsum dolor sit amet
-            </p>
-            <p>
+              />
+              <p class="services__card-list__container__description">
+                Criação de um design visual atraente e responsivo.
+              </p>
+            </div>
+            <div class="services__card-list__container">
               <img
                 src="/images/bx-check.svg"
                 alt=""
                 class="services__card-icon card__social-icons"
-              />Lorem ipsum dolor sit amet
-            </p>
-            <p>
-              <img
-                src="/images/bx-check.svg"
-                alt=""
-                class="services__card-icon card__social-icons"
-              />Lorem ipsum dolor sit amet
-            </p>
-            <p>
-              <img
-                src="/images/bx-check.svg"
-                alt=""
-                class="services__card-icon card__social-icons"
-              />Lorem ipsum dolor sit amet
-            </p>
-            <p>
-              <img
-                src="/images/bx-check.svg"
-                alt=""
-                class="services__card-icon card__social-icons"
-              />Lorem ipsum dolor sit amet
-            </p>
-            <p>
-              <img
-                src="/images/bx-check.svg"
-                alt=""
-                class="services__card-icon card__social-icons"
-              />Lorem ipsum dolor sit amet
-            </p>
+              />
+              <p class="services__card-list__container__description">
+                Criação de wireframes para planejar a estrutura e a usabilidade
+                do site.
+              </p>
+            </div>
           </div>
         </div>
         <div class="services__card">
           <div class="services__card-title">
-            <p class="services__card-text">Web designer</p>
+            <p class="services__card-text">Desenvolvimento Web</p>
           </div>
           <div class="services__card-list">
-            <p>
+            <div class="services__card-list__container">
               <img
                 src="/images/bx-check.svg"
                 alt=""
                 class="services__card-icon card__social-icons"
-              />Lorem ipsum dolor sit amet
-            </p>
-            <p>
+              />
+              <p class="services__card-list__container__description">
+                Design de interface de usuário (UI) em código React.
+              </p>
+            </div>
+
+            <div class="services__card-list__container">
               <img
                 src="/images/bx-check.svg"
                 alt=""
                 class="services__card-icon card__social-icons"
-              />Lorem ipsum dolor sit amet
-            </p>
-            <p>
+              />
+              <p class="services__card-list__container__description">
+                Integração de APIs para acessar dados ou funcionalidades de
+                outras plataformas.
+              </p>
+            </div>
+            <div class="services__card-list__container">
               <img
                 src="/images/bx-check.svg"
                 alt=""
                 class="services__card-icon card__social-icons"
-              />Lorem ipsum dolor sit amet
-            </p>
-            <p>
+              />
+              <p class="services__card-list__container__description">
+                Autenticação de usuários, gerenciamento de conteúdo e
+                processamento de formulários.
+              </p>
+            </div>
+            <div class="services__card-list__container">
               <img
                 src="/images/bx-check.svg"
                 alt=""
                 class="services__card-icon card__social-icons"
-              />Lorem ipsum dolor sit amet
-            </p>
-            <p>
-              <img
-                src="/images/bx-check.svg"
-                alt=""
-                class="services__card-icon card__social-icons"
-              />Lorem ipsum dolor sit amet
-            </p>
-            <p>
-              <img
-                src="/images/bx-check.svg"
-                alt=""
-                class="services__card-icon card__social-icons"
-              />Lorem ipsum dolor sit amet
-            </p>
+              />
+              <p class="services__card-list__container__description">
+                Configuração do ambiente de hospedagem para acomodar seu site.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -285,7 +272,9 @@
               class="name input-contact data--input"
               id="name"
               onblur="checkInputs(this.value, this.id)"
-              placeholder="Nome"
+              placeholder=""
+              autocomplete="off"
+              aria-autocomplete="none"
             />
             <label class="contact__label" for="name">Nome</label>
             <img
@@ -303,7 +292,7 @@
               class="email input-contact data--input"
               id="email"
               onblur="checkInputs(this.value, this.id)"
-              placeholder="E-mail"
+              placeholder=""
             />
             <label class="contact__label" for="email">E-mail</label>
             <img
@@ -347,8 +336,9 @@
               Receba novidades sobre meus projetos
             </h1>
             <p class="text subscription__text">
-              Lorem Ipsum is simply dummy text of the printing and standard
-              dummy text since the 1500s
+              Fique por dentro das últimas atualizações e novos projetos que
+              estou desenvolvendo. Inscreva-se apara receber informações
+              exclusivas diretamente na sua caixa de entrada.
             </p>
           </div>
           <form action="" class="subscription__form">
@@ -381,25 +371,21 @@
           <li>
             <a href=""
               ><img
+                id="0"
                 class="card__social-icons icons--hover"
                 src="/images/bxl-instagram.svg"
                 alt=""
+                onclick="redirectingPage(this.id)"
             /></a>
           </li>
           <li>
             <a href=""
               ><img
+                id="1"
                 class="card__social-icons icons--hover"
                 src="/images/bxl-twitter.svg"
                 alt=""
-            /></a>
-          </li>
-          <li>
-            <a href=""
-              ><img
-                class="card__social-icons icons--hover"
-                src="/images/bxl-whatsapp.svg"
-                alt=""
+                onclick="redirectingPage(this.id)"
             /></a>
           </li>
         </ul>

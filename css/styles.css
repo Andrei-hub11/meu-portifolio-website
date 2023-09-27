@@ -53,8 +53,8 @@ body {
     hue-rotate(108deg) brightness(103%) contrast(103%);
   --cor-light-icons-terciaria: invert(15%) sepia(74%) saturate(6878%)
     hue-rotate(358deg) brightness(102%) contrast(114%);
-  --cor-success-icon: invert(57%) sepia(100%) saturate(336%) hue-rotate(58deg)
-    brightness(91%) contrast(104%);
+  --cor-success-icon: invert(99%) sepia(0%) saturate(7494%) hue-rotate(211deg)
+    brightness(103%) contrast(100%);
   --heading-color: hsl(var(--hue-1), 61%, 24%);
   --img-form: url(/images/imageformContact-corlight.jpg);
   /* --svg-footer: url(/images/wave.svg); */ }
@@ -439,7 +439,7 @@ li {
 .services__card {
   background: var(--cor-principal);
   height: 26rem;
-  width: 25rem; }
+  width: 26rem; }
 
 .services__card-title {
   display: flex;
@@ -457,17 +457,27 @@ li {
   color: var(--cor-principal); }
 
 .services__card-icon {
-  height: 1.7rem;
+  height: 2rem;
   filter: var(--cor-light-icons-secundaria); }
 
 .services__card-list {
   margin-top: 2rem;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  font-size: 1.5rem; }
+
+.services__card-list__container {
+  width: 80%;
+  display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.5rem;
-  gap: 1rem; }
+  gap: 0.5rem; }
+
+.services__card-list__container__description {
+  color: var(--cor-clara);
+  font-size: 1.2rem;
+  word-break: all; }
 
 .section-projects {
   padding: 5rem; }
@@ -568,8 +578,9 @@ li {
 .contact--icon {
   position: absolute;
   visibility: hidden;
+  top: 50%;
+  transform: translateY(-50%);
   right: 1rem;
-  top: 2rem;
   height: 2.5rem;
   background-size: cover; }
 
@@ -607,10 +618,10 @@ input::placeholder {
   display: block;
   font-family: inherit;
   transition: 0.2s;
-  color: #80868b;
+  color: var(--cor-clara);
   padding: 0 0.6rem;
   height: 0.7rem;
-  background: white;
+  background: var(--cor-principal);
   text-align: center; }
 
 .input-contact {
@@ -622,12 +633,12 @@ input::placeholder {
   height: 4rem;
   border: 0.2rem solid #808080;
   outline: 0;
-  background-color: white;
-  color: #333;
+  color: var(--cor-clara);
   padding-left: 1rem; }
 
 .input-contact:-webkit-autofill {
-  -webkit-box-shadow: 0 0 0 5rem white inset; }
+  -webkit-text-fill-color: var(--cor-clara);
+  -webkit-box-shadow: 0 0 0 5rem var(--cor-principal) inset; }
 
 .input__textarea {
   font-size: 1.5rem;
@@ -655,8 +666,7 @@ input::placeholder {
   font-size: 1.5rem;
   cursor: text;
   top: 2rem;
-  left: 1.8rem;
-  color: #80868b;
+  color: var(--cor-clara);
   font-weight: 400; }
 
 .input-contact:focus ~ label {
@@ -664,7 +674,7 @@ input::placeholder {
   left: 1rem;
   font-size: 0.8rem;
   font-weight: 400;
-  color: #1a73e8; }
+  color: var(--cor-clara); }
 
 /* .input-contact:focus {
     border-width: 2px;
@@ -921,13 +931,13 @@ input::placeholder {
   .services {
     margin-top: 5rem;
     display: flex;
+    justify-content: space-evenly;
     align-items: center;
-    flex-direction: column;
     row-gap: 2rem; }
     .services__card {
       background: var(--cor-principal);
-      height: 26rem;
-      width: 25rem; }
+      height: 30rem;
+      width: 27rem; }
     .services__card-title {
       display: flex;
       justify-content: center;
@@ -989,22 +999,26 @@ input::placeholder {
     .contact__form-control {
       top: 3rem;
       padding: 10px 0; }
+  .btn--contact {
+    padding: 1.8rem; }
   .input-contact {
     font-size: 1.2rem;
     font-weight: 400;
     width: 35rem;
     height: 3.5rem;
-    border: 0.1rem solid #808080;
+    border: 0.1rem solid var(--cor-clara);
     outline: 0;
-    background-color: white;
+    background-color: var(--cor-principal);
     color: #333;
     padding-left: 1rem; }
+  .input__textarea::placeholder {
+    color: var(--cor-clara); }
   .input__textarea {
     font-size: 1.2rem;
     height: 15rem;
     padding: 0.8rem;
     border-radius: 2rem;
-    border: 1px solid #80868b;
+    border: 1px solid var(--cor-clara);
     resize: none;
     overflow-y: auto; }
   .btn--contact {
@@ -1026,6 +1040,8 @@ input::placeholder {
     z-index: 1050; }
   .openmenu {
     right: 0; }
+  .subscription__box {
+    max-width: 45rem; }
   .subscription__box__secondary {
     grid-template-columns: 1fr;
     row-gap: 1rem; }
@@ -1037,7 +1053,6 @@ input::placeholder {
     text-align: center; }
   .subscription__box__secondary form {
     display: grid;
-    grid-template-columns: 20rem;
     column-gap: 2rem; }
   .subscription__box__secondary .subscription__heading {
     font-size: 1.7rem; }
@@ -1158,8 +1173,8 @@ input::placeholder {
     align-items: center; }
     .services__card {
       background: var(--cor-principal);
-      height: 26rem;
-      width: 25rem; }
+      height: 30rem;
+      width: 27rem; }
     .services__card-title {
       display: flex;
       justify-content: center;
@@ -1176,7 +1191,7 @@ input::placeholder {
     .services .services__card-icon {
       height: 1.7rem;
       filter: var(--cor-light-icons-secundaria); }
-    .services .services__card-list {
+    .services__card-list {
       margin-top: 1rem;
       font-size: 1.2rem;
       gap: 1rem; }
@@ -1221,22 +1236,27 @@ input::placeholder {
     .contact__form-control {
       top: 3rem;
       padding: 10px 0; }
+  .btn--contact {
+    padding: 1.8rem; }
   .input-contact {
     font-size: 1.2rem;
     font-weight: 400;
     width: 35rem;
     height: 3.5rem;
-    border: 0.1rem solid #808080;
+    border: 0.1rem solid var(--cor-clara);
     outline: 0;
-    background-color: white;
-    color: #333;
+    background-color: var(--cor-principal);
+    color: var(--cor-clara);
     padding-left: 1rem; }
+  .input__textarea::placeholder {
+    color: var(--cor-clara); }
   .input__textarea {
     font-size: 1.2rem;
     height: 15rem;
     padding: 0.8rem;
     border-radius: 2rem;
-    border: 1px solid #80868b;
+    border: 1px solid var(--cor-clara);
+    color: var(--cor-clara);
     resize: none;
     overflow-y: auto; }
   .btn--contact {
@@ -1258,6 +1278,8 @@ input::placeholder {
     z-index: 1050; }
   .openmenu {
     right: 0; }
+  .subscription__box {
+    max-width: 45rem; }
   .subscription__box__secondary {
     grid-template-columns: 1fr;
     row-gap: 1rem; }
@@ -1392,10 +1414,6 @@ input::placeholder {
     .services .services__card-icon {
       height: 1.7rem;
       filter: var(--cor-light-icons-secundaria); }
-    .services .services__card-list {
-      margin-top: 1rem;
-      font-size: 1.5rem;
-      gap: 2rem; }
   .projects {
     margin-top: 7rem;
     display: grid;
@@ -1449,28 +1467,14 @@ input::placeholder {
     .contact__form-control {
       top: 3rem;
       padding: 10px 0; }
-  .input-contact {
-    font-size: 1.5rem;
-    font-weight: 400;
-    width: 35rem;
-    height: 3.5rem;
-    border: 0.1rem solid #808080;
-    outline: 0;
-    background-color: white;
-    color: #333;
-    padding-left: 1rem; }
-  .input__textarea {
-    font-size: 1.5rem;
-    height: 15rem;
-    padding: 0.8rem;
-    border-radius: 2rem;
-    border: 1px solid #80868b;
-    resize: none;
-    overflow-y: auto; }
+  .btn--contact {
+    padding: 1.8rem; }
   .btn--contact {
     width: 25rem; }
   .openmenu {
     right: 0; }
+  .subscription__box {
+    max-width: 65rem; }
   .subscription__box__secondary__info {
     display: flex;
     flex-direction: column;
@@ -1594,8 +1598,7 @@ input::placeholder {
       filter: var(--cor-light-icons-secundaria); }
     .services .services__card-list {
       margin-top: 2rem;
-      font-size: 1.5rem;
-      gap: 2rem; }
+      font-size: 1.5rem; }
   .projects {
     margin-top: 7rem;
     display: grid;
@@ -1649,24 +1652,8 @@ input::placeholder {
     .contact__form-control {
       top: 3rem;
       padding: 10px 0; }
-  .input-contact {
-    font-size: 1.5rem;
-    font-weight: 400;
-    width: 35rem;
-    height: 3.5rem;
-    border: 0.1rem solid #808080;
-    outline: 0;
-    background-color: white;
-    color: #333;
-    padding-left: 1rem; }
-  .input__textarea {
-    font-size: 1.5rem;
-    height: 15rem;
-    padding: 0.8rem;
-    border-radius: 2rem;
-    border: 1px solid #80868b;
-    resize: none;
-    overflow-y: auto; }
+  .btn--contact {
+    padding: 1.8rem; }
   .navegation {
     display: flex;
     justify-content: space-between;
@@ -1795,12 +1782,11 @@ input::placeholder {
       text-align: justify;
       color: var(--cor-clara); }
     .services .services__card-icon {
-      height: 1.7rem;
+      height: 2.5rem;
       filter: var(--cor-light-icons-secundaria); }
     .services .services__card-list {
-      margin-top: 2rem;
       font-size: 1.5rem;
-      gap: 2rem; }
+      gap: 1rem; }
   .projects {
     margin-top: 7rem;
     display: grid;
@@ -1854,24 +1840,6 @@ input::placeholder {
     .contact__form-control {
       top: 3rem;
       padding: 10px 0; }
-  .input-contact {
-    font-size: 1.5rem;
-    font-weight: 400;
-    width: 35rem;
-    height: 3.5rem;
-    border: 0.1rem solid #808080;
-    outline: 0;
-    background-color: white;
-    color: #333;
-    padding-left: 1rem; }
-  .input__textarea {
-    font-size: 1.5rem;
-    height: 15rem;
-    padding: 0.8rem;
-    border-radius: 2rem;
-    border: 1px solid #80868b;
-    resize: none;
-    overflow-y: auto; }
   .btn--contact {
     padding: 1.6rem; }
   .toggle-mode {
@@ -2008,9 +1976,7 @@ input::placeholder {
       height: 2rem;
       filter: var(--cor-light-icons-secundaria); }
     .services .services__card-list {
-      margin-top: 2rem;
-      font-size: 2rem;
-      gap: 2rem; }
+      font-size: 2rem; }
   .projects {
     margin-top: 7rem;
     display: grid;
@@ -2067,21 +2033,14 @@ input::placeholder {
       top: 3rem;
       padding: 10px 0; }
   .input-contact {
-    font-size: 2rem;
-    font-weight: 400;
     width: 40rem;
-    height: 4rem;
-    border: 0.1rem solid #808080;
-    outline: 0;
-    background-color: white;
-    color: #333;
-    padding-left: 1rem; }
+    height: 4rem; }
   .input__textarea {
     font-size: 2rem;
     height: 20rem;
     padding: 0.8rem;
     border-radius: 2rem;
-    border: 1px solid #80868b;
+    border: 1px solid var(--cor-clara);
     resize: none;
     overflow-y: auto; }
   .btn--contact {

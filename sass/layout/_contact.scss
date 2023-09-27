@@ -68,8 +68,9 @@
 .contact--icon {
   position: absolute;
   visibility: hidden;
+  top: 50%;
+  transform: translateY(-50%);
   right: 1rem;
-  top: 2rem;
   height: 2.5rem;
   background-size: cover;
 }
@@ -114,10 +115,10 @@ input::placeholder {
   display: block;
   font-family: inherit;
   transition: 0.2s;
-  color: #80868b;
+  color: var(--cor-clara);
   padding: 0 0.6rem;
   height: 0.7rem;
-  background: white;
+  background: var(--cor-principal);
   text-align: center;
 }
 
@@ -130,13 +131,13 @@ input::placeholder {
   height: 4rem;
   border: 0.2rem solid #808080;
   outline: 0;
-  background-color: white;
-  color: #333;
+  color: var(--cor-clara);
   padding-left: 1rem;
 }
 
 .input-contact:-webkit-autofill {
-  -webkit-box-shadow: 0 0 0 5rem white inset;
+  -webkit-text-fill-color: var(--cor-clara);
+  -webkit-box-shadow: 0 0 0 5rem var(--cor-principal) inset;
 }
 
 .input__textarea {
@@ -169,8 +170,7 @@ input::placeholder {
   font-size: 1.5rem;
   cursor: text;
   top: 2rem;
-  left: 1.8rem;
-  color: #80868b;
+  color: var(--cor-clara);
   font-weight: 400;
 }
 .input-contact:focus ~ label {
@@ -178,7 +178,7 @@ input::placeholder {
   left: 1rem;
   font-size: 0.8rem;
   font-weight: 400;
-  color: #1a73e8;
+  color: var(--cor-clara);
 }
 /* .input-contact:focus {
     border-width: 2px;
@@ -188,6 +188,7 @@ input::placeholder {
 .input-contact[type="number"] {
   -moz-appearance: textfield;
 }
+
 .input-contact::-webkit-outer-spin-button,
 .input-contact::-webkit-inner-spin-button {
   -webkit-appearance: none;

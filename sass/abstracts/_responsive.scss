@@ -151,14 +151,14 @@
   .services {
     margin-top: 5rem;
     display: flex;
+    justify-content: space-evenly;
     align-items: center;
-    flex-direction: column;
     row-gap: 2rem;
 
     &__card {
       background: var(--cor-principal);
-      height: 26rem;
-      width: 25rem;
+      height: 30rem;
+      width: 27rem;
     }
 
     &__card-title {
@@ -249,16 +249,24 @@
     }
   }
 
+  .btn--contact {
+    padding: 1.8rem;
+  }
+
   .input-contact {
     font-size: $font-size--normal;
     font-weight: 400;
     width: 35rem;
     height: 3.5rem;
-    border: 0.1rem solid #808080;
+    border: 0.1rem solid var(--cor-clara);
     outline: 0;
-    background-color: white;
+    background-color: var(--cor-principal);
     color: #333;
     padding-left: 1rem;
+  }
+
+  .input__textarea::placeholder {
+    color: var(--cor-clara);
   }
 
   .input__textarea {
@@ -266,7 +274,7 @@
     height: 15rem;
     padding: 0.8rem;
     border-radius: 2rem;
-    border: 1px solid #80868b;
+    border: 1px solid var(--cor-clara);
     resize: none;
     overflow-y: auto;
   }
@@ -296,6 +304,10 @@
     right: 0;
   }
 
+  .subscription__box {
+    max-width: 45rem;
+  }
+
   .subscription__box__secondary {
     grid-template-columns: 1fr;
     row-gap: 1rem;
@@ -311,7 +323,6 @@
 
   .subscription__box__secondary form {
     display: grid;
-    grid-template-columns: 20rem;
     column-gap: 2rem;
   }
 
@@ -490,12 +501,13 @@
     margin-top: 5rem;
     display: flex;
     justify-content: space-evenly;
+
     align-items: center;
 
     &__card {
       background: var(--cor-principal);
-      height: 26rem;
-      width: 25rem;
+      height: 30rem;
+      width: 27rem;
     }
 
     &__card-title {
@@ -520,7 +532,7 @@
       filter: var(--cor-light-icons-secundaria);
     }
 
-    .services__card-list {
+    &__card-list {
       margin-top: 1rem;
       font-size: $font-size--normal;
       gap: 1rem;
@@ -586,16 +598,24 @@
     }
   }
 
+  .btn--contact {
+    padding: 1.8rem;
+  }
+
   .input-contact {
     font-size: $font-size--normal;
     font-weight: 400;
     width: 35rem;
     height: 3.5rem;
-    border: 0.1rem solid #808080;
+    border: 0.1rem solid var(--cor-clara);
     outline: 0;
-    background-color: white;
-    color: #333;
+    background-color: var(--cor-principal);
+    color: var(--cor-clara);
     padding-left: 1rem;
+  }
+
+  .input__textarea::placeholder {
+    color: var(--cor-clara);
   }
 
   .input__textarea {
@@ -603,7 +623,8 @@
     height: 15rem;
     padding: 0.8rem;
     border-radius: 2rem;
-    border: 1px solid #80868b;
+    border: 1px solid var(--cor-clara);
+    color: var(--cor-clara);
     resize: none;
     overflow-y: auto;
   }
@@ -631,6 +652,10 @@
 
   .openmenu {
     right: 0;
+  }
+
+  .subscription__box {
+    max-width: 45rem;
   }
 
   .subscription__box__secondary {
@@ -830,12 +855,6 @@
       height: 1.7rem;
       filter: var(--cor-light-icons-secundaria);
     }
-
-    .services__card-list {
-      margin-top: 1rem;
-      font-size: $font-size--normal;
-      gap: 2rem;
-    }
   }
 
   .projects {
@@ -913,26 +932,8 @@
     }
   }
 
-  .input-contact {
-    font-size: $font-size--normal;
-    font-weight: 400;
-    width: 35rem;
-    height: 3.5rem;
-    border: 0.1rem solid #808080;
-    outline: 0;
-    background-color: white;
-    color: #333;
-    padding-left: 1rem;
-  }
-
-  .input__textarea {
-    font-size: $font-size--normal;
-    height: 15rem;
-    padding: 0.8rem;
-    border-radius: 2rem;
-    border: 1px solid #80868b;
-    resize: none;
-    overflow-y: auto;
+  .btn--contact {
+    padding: 1.8rem;
   }
 
   .btn--contact {
@@ -941,6 +942,10 @@
 
   .openmenu {
     right: 0;
+  }
+
+  .subscription__box {
+    max-width: 65rem;
   }
 
   .subscription__box__secondary__info {
@@ -1127,7 +1132,6 @@
     .services__card-list {
       margin-top: 2rem;
       font-size: 1.5rem;
-      gap: 2rem;
     }
   }
 
@@ -1206,26 +1210,8 @@
     }
   }
 
-  .input-contact {
-    font-size: $font-size--normal;
-    font-weight: 400;
-    width: 35rem;
-    height: 3.5rem;
-    border: 0.1rem solid #808080;
-    outline: 0;
-    background-color: white;
-    color: #333;
-    padding-left: 1rem;
-  }
-
-  .input__textarea {
-    font-size: $font-size--normal;
-    height: 15rem;
-    padding: 0.8rem;
-    border-radius: 2rem;
-    border: 1px solid #80868b;
-    resize: none;
-    overflow-y: auto;
+  .btn--contact {
+    padding: 1.8rem;
   }
 
   .navegation {
@@ -1415,14 +1401,13 @@
     }
 
     .services__card-icon {
-      height: 1.7rem;
+      height: 2.5rem;
       filter: var(--cor-light-icons-secundaria);
     }
 
     .services__card-list {
-      margin-top: 2rem;
       font-size: $font-size--normal;
-      gap: 2rem;
+      gap: 1rem;
     }
   }
 
@@ -1499,28 +1484,6 @@
       top: 3rem;
       padding: 10px 0;
     }
-  }
-
-  .input-contact {
-    font-size: $font-size--normal;
-    font-weight: 400;
-    width: 35rem;
-    height: 3.5rem;
-    border: 0.1rem solid #808080;
-    outline: 0;
-    background-color: white;
-    color: #333;
-    padding-left: 1rem;
-  }
-
-  .input__textarea {
-    font-size: $font-size--normal;
-    height: 15rem;
-    padding: 0.8rem;
-    border-radius: 2rem;
-    border: 1px solid #80868b;
-    resize: none;
-    overflow-y: auto;
   }
 
   .btn--contact {
@@ -1729,9 +1692,7 @@
     }
 
     .services__card-list {
-      margin-top: 2rem;
       font-size: $font-size--normal;
-      gap: 2rem;
     }
   }
 
@@ -1815,15 +1776,8 @@
   }
 
   .input-contact {
-    font-size: $font-size--normal;
-    font-weight: 400;
     width: 40rem;
     height: 4rem;
-    border: 0.1rem solid #808080;
-    outline: 0;
-    background-color: white;
-    color: #333;
-    padding-left: 1rem;
   }
 
   .input__textarea {
@@ -1831,7 +1785,7 @@
     height: 20rem;
     padding: 0.8rem;
     border-radius: 2rem;
-    border: 1px solid #80868b;
+    border: 1px solid var(--cor-clara);
     resize: none;
     overflow-y: auto;
   }

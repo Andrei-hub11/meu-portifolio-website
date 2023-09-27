@@ -20,7 +20,7 @@
 .services__card {
   background: var(--cor-principal);
   height: 26rem;
-  width: 25rem;
+  width: 26rem;
 }
 
 .services__card-title {
@@ -41,7 +41,7 @@
 }
 
 .services__card-icon {
-  height: 1.7rem;
+  height: 2rem;
   filter: var(--cor-light-icons-secundaria);
 }
 
@@ -49,8 +49,20 @@
   margin-top: 2rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   font-size: 1.5rem;
-  gap: 1rem;
+}
+
+.services__card-list__container {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.services__card-list__container__description {
+  color: var(--cor-clara);
+  font-size: 1.2rem;
+  word-break: all;
 }
